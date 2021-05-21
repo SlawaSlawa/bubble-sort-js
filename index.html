@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    const arr = [92, 33, 97, 87, 40, 96, 72, 4, 44, 88, 79, 6, 18, 85, 18, 84, 30, 20, 73, 72, 11, 8, 59, 65, 39, 20, 40, 30, 97, 81, 56, 25, 58, 47, 64, 40, 7, 14, 78, 17, 56, 63, 92, 79, 33, 86, 45, 17, 0, 20, 81, 32, 64, 15, 11, 98, 2, 58, 3, 54, 62, 56, 8, 88, 69, 83, 66, 60, 91, 15, 40, 33, 59, 2, 12, 97, 85, 14, 64, 93, 23, 64, 53, 82, 57, 64, 23, 97, 22, 29, 12, 17, 78, 91, 44, 51, 21, 10, 11, 34];
+
+    function sortArr(array) {
+        for (let j = 0; j < array.length - 1; j++) {
+            for (let i = 0; i < array.length - 1 - j; i++) {
+                if (array[i] > array[i + 1]) {
+                    let buff = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = buff;
+                }
+            }
+        }
+    }
+    sortArr(arr);
+    console.log(arr);
+    </script>
+</body>
+
+</html>
